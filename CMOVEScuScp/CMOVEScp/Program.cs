@@ -81,7 +81,11 @@ namespace CMOVEScp
                                     rsponse.Completed = ++cnt;
                                     rsponse.Warnings = 0;
                                     rsponse.Failures = 0;
-                                    rsp.Add(rsponse);
+                                    //zssure:2014-12-24
+                                    //修复发送C-MOVE-RSP的逻辑错误
+                                    SendResponse(rsponse);
+                                    //rsp.Add(rsponse);
+                                    //zssure:end
 
                                 }
 
