@@ -1,4 +1,4 @@
-// DcmPixelDataTest.cpp : �������̨Ӧ�ó������ڵ㡣
+// DcmPixelDataTest.cpp : 定义控制台应用程序的入口点。
 //
 
 #include "stdafx.h"
@@ -38,7 +38,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	char* tmpData=mydata;
 	char curDir[100];
 	getcwd(curDir,100);
-	//ѭ������4��ͼƬ
+	//循环添加4张图片
 	for(int i=0;i<4;++i)
 	{
 		OFString num;
@@ -86,4 +86,62 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	return 0;
 }
+/*!-------博文：DICOM医学图像处理：DICOM存储操作之 “多幅JPG图像数据存入DCM文件”核心代码--------!*/
+int _tmain(int argc, _TCHAR* argv[])
+{
+	OFCondition status;
 
+	DcmFileFormat fileformat;
+	DcmDataset* mydatasete=fileformat.getDataset();
+	DicomUtils::AddDicomElements((DcmDataset*&)mydatasete);
+	Uint16 rows,cols,samplePerPixel,bitsAlloc,bitsStored,highBit,pixelRpr,planConf,pixAspectH,pixAspectV;
+	OFString photoMetrInt;
+	Uint32 length;
+	E_TransferSyntax ts;
+	char curDir[255];
+	getcwd(curDir,255);
+	DcmPixelSequence *seq=new DcmPixelSequence(DcmTag(DCM_PixelData,EVR_OB));
+	/*!------zssure:begin,添加一个空的Dicom Pixel Item充当Offset Fragment------!*/
+	seq->insert(new DcmPixelItem(DcmTag(DCM_Item,EVR_OB)));
+	/*-------zssure:end,可顺利解决多幅JPEG存入DCM的问题-------------------------*/
+	//循环添加4张图片
+	for(int i=0;i<4;++i)
+	{
+		OFString num;
+		char numtmp[255];
+		memset(numtmp,0,sizeof(char)*255);
+		sprintf(numtmp,"%s\\jpeg-test\\%d.jpg",curDir,i+1);
+		OFString filename=OFString(numtmp);
+		I2DJpegSource* bmpSource=new I2DJpegSource();
+		bmpSource->setImageFile(filename);
+
+		char* pixData=NULL;
+		bmpSource->readPixelData(rows,cols,samplePerPixel,photoMetrInt,bitsAlloc,bitsStored,highBit,pixelRpr,planConf,pixAspectH,pixAspectV,pixData,length,ts);
+
+		DcmPixelItem *newItem=new DcmPixelItem(DcmTag(DCM_Item,EVR_OB));
+		if(newItem!=NULL)
+		{
+			seq->insert(newItem);
+			OFCondition result=newItem->putUint8Array((Uint8*)pixData,length);
+
+		}
+		delete bmpSource;
+	};
+
+	mydatasete->putAndInsertUint16(DCM_SamplesPerPixel,samplePerPixel);
+	mydatasete->putAndInsertString(DCM_NumberOfFrames,"4");
+	mydatasete->putAndInsertUint16(DCM_Rows,rows);
+	mydatasete->putAndInsertUint16(DCM_Columns,cols);
+	mydatasete->putAndInsertUint16(DCM_BitsAllocated,bitsAlloc);
+	mydatasete->putAndInsertUint16(DCM_BitsStored,bitsStored);
+	mydatasete->putAndInsertUint16(DCM_HighBit,highBit);
+	mydatasete->putAndInsertOFStringArray(DCM_PhotometricInterpretation,photoMetrInt);
+	mydatasete->insert(seq,OFFalse,OFFalse);
+	status=fileformat.saveFile("c:\\MultiJpeg2Multi-frameDCMtest-error.dcm",ts);
+	if(status.bad())
+	{
+		std::cout<<"Error:("<<status.text()<<")\n";
+	}
+	return 0;
+}
+/*!--------------------------------------------------------------------------------------------!*/
