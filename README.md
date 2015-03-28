@@ -16,3 +16,4 @@ DcmPixelDataTest,[DICOM存储操作之“多幅JPG图像数据存入DCM文件](h
 CMoveScuScp,[fo-dicom网络传输之C-FIND and C-MOVE](http://blog.csdn.net/zssureqh/article/details/41631563)<br>
 CFindScuScp,[fo-dicom网络传输之C-FIND and C-MOVE](http://blog.csdn.net/zssureqh/article/details/41631563)<br>
 C-STORETest,[storescp.exe与storescu.exe源码剖析，学习C-STORE请求（续）](http://blog.csdn.net/zssureqh/article/details/39237649)<br>
+C-FIND Scu,[DICOM：基于DCMTK实现C-FIND SCU](http://blog.csdn.net/zssureqh/article/details/44687753)<br>
