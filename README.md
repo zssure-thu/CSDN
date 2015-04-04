@@ -17,3 +17,4 @@ CMoveScuScp,[fo-dicom网络传输之C-FIND and C-MOVE](http://blog.csdn.net/zssu
 CFindScuScp,[fo-dicom网络传输之C-FIND and C-MOVE](http://blog.csdn.net/zssureqh/article/details/41631563)<br>
 C-STORETest,[storescp.exe与storescu.exe源码剖析，学习C-STORE请求（续）](http://blog.csdn.net/zssureqh/article/details/39237649)<br>
 C-FIND Scu,[DICOM：基于DCMTK实现C-FIND SCU](http://blog.csdn.net/zssureqh/article/details/44687753)<br>
+WinForm4HostingWCFService,[日积（Running）月累（ZSSURE）：WCF学习之“通过事件绑定控制WinForm宿主程序主界面控件”](http://blog.csdn.net/zssureqh/article/details/44875687)<br>
