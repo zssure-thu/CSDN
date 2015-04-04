@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfContract", "WcfContract\WcfContract.csproj", "{22855536-A259-4F88-AE3B-8791C5B9EE28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\WcfService.csproj", "{AF2479F7-29E0-440A-A1E1-AA2D27954648}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCF", "WCF", "{E40B7834-148B-4720-8AB3-1CD94F179DC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCFServiceHost", "WCFServiceHost", "{3B41A746-E431-4D8B-A587-4106D7E97DDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormHost4WCF", "WinFormHost4WCF\WinFormHost4WCF.csproj", "{3EDD9D98-669F-4A8A-91F2-F06B471178D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WCFTestClient", "WCFTestClient", "{34E406D6-E68F-4F50-9E47-E09A53E144F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformClient4WcfTest", "WinformClient4WcfTest\WinformClient4WcfTest.csproj", "{66BE8C9C-1F59-48AF-B209-A9052D0712C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22855536-A259-4F88-AE3B-8791C5B9EE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22855536-A259-4F88-AE3B-8791C5B9EE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22855536-A259-4F88-AE3B-8791C5B9EE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22855536-A259-4F88-AE3B-8791C5B9EE28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2479F7-29E0-440A-A1E1-AA2D27954648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2479F7-29E0-440A-A1E1-AA2D27954648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2479F7-29E0-440A-A1E1-AA2D27954648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2479F7-29E0-440A-A1E1-AA2D27954648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EDD9D98-669F-4A8A-91F2-F06B471178D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDD9D98-669F-4A8A-91F2-F06B471178D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDD9D98-669F-4A8A-91F2-F06B471178D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDD9D98-669F-4A8A-91F2-F06B471178D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66BE8C9C-1F59-48AF-B209-A9052D0712C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66BE8C9C-1F59-48AF-B209-A9052D0712C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66BE8C9C-1F59-48AF-B209-A9052D0712C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66BE8C9C-1F59-48AF-B209-A9052D0712C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22855536-A259-4F88-AE3B-8791C5B9EE28} = {E40B7834-148B-4720-8AB3-1CD94F179DC3}
+		{AF2479F7-29E0-440A-A1E1-AA2D27954648} = {E40B7834-148B-4720-8AB3-1CD94F179DC3}
+		{3EDD9D98-669F-4A8A-91F2-F06B471178D2} = {3B41A746-E431-4D8B-A587-4106D7E97DDE}
+		{66BE8C9C-1F59-48AF-B209-A9052D0712C7} = {34E406D6-E68F-4F50-9E47-E09A53E144F5}
+	EndGlobalSection
+EndGlobal
