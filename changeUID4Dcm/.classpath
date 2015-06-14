@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-audit-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-base64-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-core-2.0.28.jar" sourcepath="F:/dcm4che2/dcm4che2-svn/dcm4che2/trunk"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-filecache-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-hp-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-image-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-imageio-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-imageio-rle-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-iod-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-net-2.0.28.jar" sourcepath="F:/dcm4che2/dcm4che2-svn/dcm4che2/trunk"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-soundex-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcm2dcm-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcm2jpg-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcm2txt-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcm2xml-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmdir-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmecho-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmgpwl-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmhpqr-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmmv-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmmwl-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmof-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmqr-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmrcv-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmsnd-2.0.28.jar" sourcepath="F:/dcm4che2/dcm4che2-svn"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmups-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-dcmwado-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-fixjpegls-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-jpg2dcm-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-logger-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-pdf2dcm-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-rgb2ybr-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-txt2dcmsr-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/dcm4che-tool-xml2dcm-2.0.28.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="F:/HULIAN/dcm4che-2.0.28-bin/dcm4che-2.0.28/lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
